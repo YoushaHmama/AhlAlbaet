@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: wheat;
+    height: 50vh;
+}
+
+.author{
+    text-align: center;
+    font-family: cairo;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10%;
+}
+
+.text{
+    text-align: center;
+    font-family: cairo;
+    font-size: 20px;
+    font-weight: 700;
+    height: fit-content;
+    margin-top: 10%;
+    animation-name: text_animation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.loading_image_div{
+    text-align: center;
+    margin-top: 20%;
+}
+
+.loading_image_div .loading_image{
+    width: 50%;
+}
+
+.loading-tape{
+    width: 50%;
+    height: 25px;
+    margin: 10% 25%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.loading-tape .fill{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    border-radius: 8px;
+    animation-name: loading_animation;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+}
+
+.timeout_section{
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    width: 70%;
+    height: 25%;
+    margin-left: 15%;
+    border: 1px solid black;
+    text-align: center;
+    font-family: cairo;
+}
+
+.timeout_section .timeout_title{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.timeout_section .reload_btn{
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    font-family: inherit;
+    color: rgb(0, 0, 255);
+}

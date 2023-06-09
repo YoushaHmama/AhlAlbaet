@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: wheat;
+}
+
+.profile-container{
+    position: relative; 
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-height: 100vh;
+}
+
+.profile-container .profile-section{
+    font-family: cairo;
+}
+
+.profile-container .profile-section .image-section{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container .profile-section .image-section img{
+    margin-top: 10%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile-container .profile-section .username{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.profile-container .profile-section hr{
+    margin-top: 5%;
+    background-color: rgb(0, 0, 0);
+    padding: 0.5px;
+}
+
+.profile-container .post-section{
+    margin-top: 4%;
+    width: 90%;
+    margin-left: 5%;
+    border: 1px solid black;
+    margin-bottom: 55px;
+}
+
+.profile-container .post-section .text{
+    direction: rtl;
+    border-bottom: 1px solid black;
+}
+
+.profile-container .post-section .image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container .post-section .image-div img{
+    max-width: 100%;
+    min-width: 50%;
+    height: 20%;
+}
+
+.profile-container .post-section .like-post{
+    width: 100%;
+    height: 35px;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-container .post-section .like-post svg{
+    width: 35px;
+    height: 35px;
+    fill: black;
+}
+
+.profile-container .post-section .like-post .like-number{
+    font-size: 35px;
+}
+
+.profile-container .common-posts-section .post-section{
+    margin-top: 10%;
+}
+
+.profile-container .common-posts-section{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    min-height: 100%;
+    background-color: wheat;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    font-family: cairo;
+}
+
+footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: rgb(165, 50, 42);
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+footer svg{
+    fill: white;
+    z-index: 10;
+    width: 35px;
+    height: 35px;
+}
+
+#profile{
+    fill: yellow;
+}

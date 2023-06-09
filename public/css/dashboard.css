@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: wheat;
+}
+
+.title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: cairo;
+}
+
+.users_number,.title2{
+    margin-top: 20px;
+    margin-right: 20px;
+    font-family: cairo;
+    font-size: 20px;
+}
+
+.users-section{
+    margin-top: 30px;
+    width: 100%;
+    height: 70vh;
+}
+
+.users_table{
+    width: fit-content;
+    text-align: center;
+    font-family: cairo;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    float: left;
+    position: absolute;
+    right: 0%;
+    overflow: scroll;
+}
+
+.users_table td{
+    display: inline-block;
+    border: 1px solid black;
+    min-height: 100%;
+    width: 24%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.users_table td div{
+    max-width: 95%;
+    min-height: 100%;
+    overflow-x: scroll;
+}
+
+.users_table td div button{
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    border: 0;
+    background-color: red;
+    color: white;
+    font-family: cairo;
+    font-size: 25px;
+}
+
+.users_table tr{
+    display: block;
+    width: 200%;
+    height: 80px;
+}
+
+.approvement-notification svg{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 1%;
+    top: 8%;
+}
+
+.approvement-notification .exist{
+    /* display: none; */
+}
+
+.approvement-section{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: wheat;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+
+.users{
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.approvement-section .close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+}
+
+.approvement-section .post-section{
+    margin-top: 25%;
+    width: 90%;
+    margin-right: 5%;
+    border: 1px solid black;
+    margin-bottom: 55px;
+}
+
+.approvement-section .post-section .text{
+    direction: rtl;
+    border-bottom: 1px solid black;
+    font-family: cairo;
+}
+
+.approvement-section .post-section .image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.approvement-section .post-section .image-div img{
+    max-width: 100%;
+    min-width: 50%;
+    height: 20%;
+}
+
+.approvement-section .post-section .approve{
+    width: 100%;
+    height: 55px;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.approvement-section .post-section .approve form{
+    width: 40%;
+}
+
+.approvement-section .post-section .approve button{
+    width: 100%;
+    height: 40px;
+    font-family: cairo;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    border: 0px;
+}
+
+.approvement-section .post-section .approve .agree{
+    background-color: green;
+}
+
+.approvement-section .post-section .approve .disagree{
+    background-color: red;
+}
+
+.approvement-section .reason{
+    display: none;
+    position: absolute;
+    top: 40%;
+    width: 70%;
+    margin-right: 15%;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.approvement-section .reason h2{
+    font-family: cairo;
+}
+
+.approvement-section .reason form input{
+    display: block;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    text-indent: 2%;
+    margin-right: 5%;
+    font-size: 20px;
+    font-family: cairo;
+}
+
+.approvement-section .reason form button{
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 8px 0px 8px 8px;
+    background-color: rgb(0, 255, 255);
+    color: white;
+    font-size: 25px;
+    font-family: cairo;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.approvement-section .person_section{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    font-family: 'cairo';
+    margin-top: 25%;
+}
+.approvement-section .person_section img{
+    width: 80px;
+    height: 80px;
+}
+.approvement-section .person_section span{
+    display: inline-block;
+    padding: 0 10px;
+    width: 100px;
+    overflow: hidden;
+}
+.approvement-section .person_section form{
+    padding-right: 5px;
+}
+.approvement-section .person_section button{
+    width: 70px;
+    height: 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-right: 7px;
+    border: none;
+    font-family: inherit;
+}
+.approvement-section .person_section button.agree{
+    background: green;
+}
+.approvement-section .person_section button.disagree{
+    background: red;
+}
+
+.post-section .author{
+    direction: rtl;
+    height: 60px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    font-family: cairo;
+}
+
+.post-section .author img{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin: 0 10px;
+    border-radius: 50%;
+}

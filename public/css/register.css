@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: wheat;
+}
+
+.title{
+    text-align: center;
+    margin-top: 50px;
+    font-family: cairo;
+    font-size: 27px;
+}
+
+.form-section{
+    margin-top: 50px;
+}
+
+.form-section .container{
+    display: grid;
+    justify-content: center;
+}
+
+.form-section .container .image-section{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.form-section .image-section .static-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.form-section .image-section .camera-section{
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-section .image-section .camera-section .camera-img{
+    width: 90%;
+    border-radius: 50%;
+}
+
+.form-section .image-section .camera-section .file-input{
+    opacity: 0;
+    position: absolute;
+}
+
+.form-section form .input1{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 8px;
+    text-indent: 3%;
+    font-family: cairo;
+    font-size: 22px;
+}
+
+.form-section form .licenses{
+    margin-top: 5%;
+    direction: rtl;
+    font-family: cairo;
+}
+
+.form-section form .licenses span{
+    font-weight: 800;
+}
+
+.form-section form .accept{
+    direction: rtl;
+}
+
+.form-section form .accept .accept-text{
+    font-family: cairo;
+}
+
+.form-section form .accept .check-box{
+    margin-right: 4%;
+}
+
+.form-section form button{
+    width: 50%;
+    height: 50px;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 8px;
+    border: 0px;
+    font-family: cairo;
+    font-size: 25px;
+    font-weight: 800;
+    background-color: rgb(232, 179, 111);
+    color: white;
+}
+
+.error{
+    position: absolute;
+    top: 28%;
+    font-family: cairo;
+    color: white;
+    direction: rtl;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: red;
+}
+
+.error1{
+    z-index: 30;
+}
+
+.error2{
+    z-index: 20;
+}
+
+.error3{
+    z-index: 10;
+}

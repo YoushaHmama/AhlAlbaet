@@ -1,0 +1,35 @@
+@font-face {
+    font-family: cairo;
+    src: url(../fonts/Cairo-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: wheat;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border: 8px dotted green;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 50%;
+    animation: loading_animation 2s linear infinite;
+}
+
+.title{
+    font-family: cairo;
+    font-size: 25px;
+    margin-top: 30px;
+    animation: text_animation 3s linear infinite;
+}

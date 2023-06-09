@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: wheat;
+}
+
+.title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: cairo;
+}
+
+section{
+    margin-top: 35%;
+}
+
+section button{
+    width: 50%;
+    height: 70px;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    border-radius: 8px;
+    border: 0px;
+    font-size: 25px;
+    font-family: cairo;
+    font-weight: 700;
+    box-shadow: 14px 8px 20px 5px;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+
+}

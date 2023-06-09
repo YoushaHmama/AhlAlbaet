@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: wheat;
+    overflow: hidden;
+}
+
+.profile-container{
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.profile-container .profile-section{
+    position: relative;
+    font-family: cairo;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.profile-container .profile-section .image-section{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container .profile-section .image-section img{
+    margin-top: 10%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile-container .profile-section .username{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.profile-container .profile-section hr{
+    margin-top: 5%;
+    background-color: rgb(0, 0, 0);
+    padding: 0.5px;
+}
+
+.profile-container .post-section{
+    margin-top: 4%;
+    width: 90%;
+    margin-left: 5%;
+    border: 1px solid black;
+    margin-bottom: 55px;
+}
+
+.profile-container .post-section .text{
+    direction: rtl;
+    border-bottom: 1px solid black;
+}
+
+.profile-container .post-section .image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container .post-section .image-div img{
+    max-width: 100%;
+    min-width: 50%;
+    height: 20%;
+}
+
+.profile-container .post-section .like-post{
+    width: 100%;
+    height: 35px;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-container .post-section .like-post svg{
+    width: 35px;
+    height: 35px;
+    fill: black;
+}
+
+.profile-container .post-section .like-post .like-number{
+    font-size: 35px;
+}
+
+.profile-container .profile-section .notification{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
+
+.notification-section{
+    width: 100%;
+    height: 92vh;
+    overflow-y: scroll;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: wheat;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+
+.notification-section .close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+}
+
+.notification-section section{
+    margin-top: 25%;
+}
+
+.notification-section .notification-container{
+    width: 100%;
+    height: 70px;
+    margin-top: 1%;
+    border: 1px solid black;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    font-family: cairo;
+}
+
+.notification-section .notification-container img{
+    width: 70px;
+    height: 70px;
+}
+
+.notification-section .notification-container .approve{
+    color: green;
+    margin-right: 20px;
+}
+
+.notification-section .notification-container .not-approve{
+    color: red;
+    margin-right: 20px;
+}
+
+.notification-section .notification-container .reason{
+    margin-right: 5px;
+}
+
+.profile-container .setting-section, .profile-container .common-posts-section{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: wheat;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    font-family: cairo;
+}
+
+.profile-container .setting-section .title{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.profile-container .setting-section .form-section{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.profile-container .setting-section .form-section .container{
+    display: grid;
+    justify-content: center;
+}
+
+.profile-container .setting-section .form-section .container .image-section{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.profile-container .setting-section .form-section .image-section .static-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile-container .setting-section .form-section .save-btn{
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 4%; 
+    border-radius: 8px;
+    font-family: cairo;
+    font-size: 25px;
+    border: 0px;
+    background-color: aqua;
+}
+
+.profile-container .setting-section .form-section .logout-btn{
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 4%; 
+    margin-bottom: 60px;
+    border-radius: 8px;
+    font-family: cairo;
+    font-size: 25px;
+    border: 0px;
+    background-color: rgb(255, 0, 0);
+}
+
+.profile-container .setting-section .form-section .image-section .camera-section{
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.profile-container .setting-section .form-section .image-section .camera-section .camera-img{
+    width: 90%;
+    border-radius: 50%;
+}
+
+.profile-container .setting-section .form-section .image-section .camera-section .file-input{
+    opacity: 0;
+    position: absolute;
+}
+
+.profile-container .setting-section .form-section form .input1{
+    width: 80%;
+    height: 60px;
+    border-radius: 8px;
+    border: 0px;
+    margin-top: 5%;
+    text-indent: 5%;
+    font-size: 22px;
+}
+
+.profile-container .common-posts-section .posting-section .make-post{
+    margin-top: 5%;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    background-color: green;
+    color: rgb(0, 0, 0);
+    box-shadow: 14px 8px 20px 5px;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+}
+
+.profile-container .common-posts-section .make-post-tools{
+    display: none;
+    width: 96%;
+    min-height: 450px;
+    margin-left: 2%;
+    margin-bottom: 50px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 0px 8px 0px 8px;
+    position: absolute;
+    top: 3%;
+    z-index: 100;
+    direction: rtl;
+}
+
+.profile-container .common-posts-section .make-post-tools svg{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    fill: gray;
+    stroke: gray;
+}
+
+.profile-container .common-posts-section .make-post-tools .photo-section{
+    position: relative;
+    width: 90%;
+    height: 200px;
+    margin-right: 5%;
+    border-radius: 8px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-container .common-posts-section .make-post-tools .photo-section .remove{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 35px;
+    font-size: 15px;
+    font-family: cairo;
+    font-weight: 600;
+    z-index: 1000;
+}
+
+.profile-container .common-posts-section .make-post-tools .photo-section div .camera{
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 5px;
+}
+
+.profile-container .common-posts-section .make-post-tools div .file-input{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    opacity: 0;
+}
+
+.profile-container .common-posts-section .make-post-tools .photo-section .photo{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.profile-container .common-posts-section .make-post-tools .input-text{
+    width: 90%;
+    margin-right: 5%;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-family: cairo;
+    color: white;
+}
+
+.profile-container .common-posts-section .post-section{
+    margin-top: 10%;
+}
+
+.profile-container .common-posts-section .make-post-tools .send{
+    width: 60%;
+    height: 70px;
+    clip-path: circle();
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+}
+
+.profile-container .common-posts-section .make-post-tools button svg{
+    fill: rgb(72, 114, 72);
+}
+
+footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    background-color: rgb(165, 50, 42);
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+footer svg{
+    fill: white;
+    z-index: 10;
+    width: 35px;
+    height: 35px;
+}
+
+#profile{
+    fill: yellow;
+}
+
+.post-section .author{
+    direction: rtl;
+    height: 60px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.post-section .author img{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.error{
+    position: absolute;
+    top: 15%;
+    font-family: cairo;
+    color: white;
+    direction: rtl;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    z-index: 10;
+}
+
+.post-section-1{
+    display: flex;
+    flex-direction: column-reverse;
+}

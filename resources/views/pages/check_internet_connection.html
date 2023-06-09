@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="/css/check_internet_connection.css"/>
+        <link rel="stylesheet" href="/css/fonts.css"/>
+        <link rel="stylesheet" href="/css/animations.css"/>
+        <title>Check_Internet_connection</title>
+    </head>
+    <body>
+        <div class="author" id="author"></div>
+        <div class="text" id="text"></div>
+        <div class="loading_image_div"><img class="loading_image" src="../static_images/img1.png" alt="error"/></div>
+        <div class="loading-tape">
+            <div class="fill" id="fill"></div>
+        </div>
+        <section class="timeout_section" id="timeout_section">
+            <div class="timeout_title">انتهت مدة الاتصال </div>
+            <button onclick="retry();" class="reload_btn">إعادة المحاولة</button>
+        </section>
+        <input style="display: none" id="email" type="text" value=""/>
+        <input style="display: none" id="password" type="text" value="">
+        
+        <script src="/js/check_internet_connection.js"></script>
+    </body>
+</html>
